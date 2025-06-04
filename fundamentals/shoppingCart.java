@@ -13,7 +13,7 @@ public class shoppingCart {
 
         System.out.print("How many " + item + " do you want to buy: ");
         int quantity = sc.nextInt();
-        
+
         System.out.print(String.format("You just bought %d %s for $ %f",quantity,item,price*quantity));
     }
 
