@@ -37,7 +37,28 @@ public class variables {
     }
     public static void Questions(){
         Scanner sc = new Scanner(System.in);
-        
+
+        System.out.print("What's your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("What's your age: ");
+        int age = sc.nextInt();
+
+        System.out.print("What's your height: ");
+        double height = sc.nextDouble();
+
+        System.out.print("What's the first character of your lastname: ");
+        char lastchar = sc.next().charAt(0);
+
+        System.out.print("Do you like java: ");
+        boolean javalike = sc.nextBoolean();
+
+        System.out.println("Your name is " + name);
+        System.out.println("Your age is " + age + " and you were born in " + (2024-age));
+        System.out.println("Your height is " + height);
+        System.out.println("The first character of your lastname is " + lastchar);
+        System.out.println("You " + (javalike ? "like" : "dont like") + " Java");
+
         sc.close();
     }
 }
