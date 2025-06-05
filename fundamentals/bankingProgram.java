@@ -31,7 +31,12 @@ public class bankingProgram {
 
     static double askAmount(Scanner sc){
         System.out.print("Type the Amount: ");
-        return sc.nextDouble();
+        double amount = sc.nextDouble();
+        if(amount < 0){
+            System.out.println("Amount cannot be a Negative Value!");
+            return 0;
+        }
+        return amount;
     }
 
     static void showBalance(double account) {
