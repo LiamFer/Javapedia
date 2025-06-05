@@ -26,6 +26,7 @@ public class weightConverter {
             }
         }
 
+
         sc.close();
     }
 }
