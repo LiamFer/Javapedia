@@ -14,7 +14,7 @@ public class arraySizing {
             System.out.print("\nInsert a number: ");
             numbers[i] = sc.nextInt();
         }
-
+        Arrays.binarySearch(numbers,9);
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
         sc.close();
