@@ -12,7 +12,7 @@ public class rockPaperScissors {
             System.out.println("Choose one:\n1.Rock\n2.Paper\n3.Scissors\n");
             int choice = sc.nextInt();
             sc.nextLine();
-            if (choice < 1 && choice > 3) {
+            if (choice < 1 || choice > 3) {
                 System.out.println("INVALID OPTION!");
             } else {
                 System.out.println(checkWinner(choice));
