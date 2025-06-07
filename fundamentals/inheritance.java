@@ -10,7 +10,7 @@ public class inheritance {
         hawks[1] = guts;
 
         for(Soldier soldier: hawks){
-            soldier.fire();
+            soldier.attack();
         }
     }
 }

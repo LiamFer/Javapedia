@@ -1,19 +1,19 @@
 package fundamentals;
 
 public class Soldier extends Human{
-    String gun;
+    String weapon;
 
-    Soldier(String name,int age,String gun){
+    Soldier(String name,int age,String weapon){
         super(name,age);
-        this.gun = gun;
+        this.weapon = weapon;
     }
 
-    Soldier(String name,int age,boolean alive,String gun){
+    Soldier(String name,int age,boolean alive,String weapon){
         super(name,age,alive);
-        this.gun = gun;
+        this.weapon = weapon;
     }
 
-    void fire(){
-        System.out.println(this.name + " is shooting using a " + this.gun + "!");
+    void attack(){
+        System.out.println(this.name + " is swinging his " + this.weapon + "!");
     }
 }
