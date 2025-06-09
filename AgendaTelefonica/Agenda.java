@@ -8,7 +8,6 @@ public class Agenda {
     private ArrayList<Contato> contatos = new ArrayList<>();
 
     void adicionarContato() {
-        Scanner sc = this.sc;
         System.out.print("Que tipo de Contato deseja incluir:\n1. Pessoal\n2. Profissional\n");
 
         int contactType = sc.nextInt();
@@ -27,12 +26,25 @@ public class Agenda {
 
     }
 
+    void removerContato(){
+        System.out.print("Qual o ID do Contato: ");
+        int contactIndex = sc.nextInt();
+        sc.nextLine();
+        if (contactIndex <= contatos.size() && contactIndex >= 0){
+            String nome = contatos.get(contactIndex).getNome();
+            contatos.remove(contactIndex-1);
+            System.out.println(nome + " foi Removido da Agenda!");
+        } else {
+            System.out.println("Contato Não Encontrado - ERRO!");
+        }
+    }
+
     void visualizarContatos() {
         System.out.println("=====CONTATOS=====");
         for (int i = 0; i < this.contatos.size();i++) {
             Contato contato = this.contatos.get(i);
             System.out.println("-----  -----");
-            System.out.println(i+". Contato");
+            System.out.println(i+1+". Contato");
             contato.displayInformation();
             System.out.println("-----  -----");
         }
@@ -61,11 +73,10 @@ public class Agenda {
         System.out.println("Qual o Parentesco: ");
         parentesco = sc.nextLine();
 
-        this.contatos.add(new ContatoPessoal(nome, email, telefone, endereco, dataNascimento, apelido, parentesco));
+        contatos.add(new ContatoPessoal(nome, email, telefone, endereco, dataNascimento, apelido, parentesco));
     }
 
     private void adicionarContatoProfissional() {
-        Scanner sc = this.sc;
         String nome, email, telefone, endereco, empresa, cargo;
         int dataNascimento;
 
@@ -85,12 +96,11 @@ public class Agenda {
         System.out.println("Qual o Cargo: ");
         cargo = sc.nextLine();
 
-        this.contatos.add(new ContatoProfissional(nome, email, telefone, endereco, dataNascimento, empresa, cargo));
+        contatos.add(new ContatoProfissional(nome, email, telefone, endereco, dataNascimento, empresa, cargo));
 
     }
 
     private String[] dadosBasicos() {
-        Scanner sc = this.sc;
         String[] infos = new String[4];
 
         System.out.println("Qual o nome: ");

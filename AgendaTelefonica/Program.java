@@ -9,13 +9,14 @@ public class Program {
         boolean keepRunning = true;
 
         do {
-            System.out.println("Escolha uma opção:\n1. Ver Contatos\n2. Adicionar Contato");
+            System.out.println("Escolha uma opção:\n1. Ver Contatos\n2. Adicionar Contato\n3. Remover Contato");
             int option = sc.nextInt();
             sc.nextLine();
 
             switch (option){
                 case 1 -> agenda.visualizarContatos();
                 case 2 -> agenda.adicionarContato();
+                case 3 -> agenda.removerContato();
             }
 
             System.out.print("Deseja continuar mexendo na Agenda (s/n): ");
