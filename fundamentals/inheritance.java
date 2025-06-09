@@ -14,6 +14,9 @@ public class inheritance {
         archSquad[0] = linus;
         archSquad[1] = legolas;
 
+        System.out.println(guts);
+        System.out.println(griffith.toString());
+
         for(int i = 0; i < hawks.length;i++){
             hawks[i].attack();
             archSquad[i].attack();

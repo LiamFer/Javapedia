@@ -5,7 +5,9 @@ public class Dog extends Animal{
         super(name);
     }
 
-    void speak(){
-        System.out.printf("%s is barking!",this.name);
+    void sayName(){
+        System.out.printf("The dog name is %s!\n",this.name);
     }
+
+
 }

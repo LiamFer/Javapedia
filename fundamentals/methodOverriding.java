@@ -5,7 +5,7 @@ public class methodOverriding {
         Dog barney = new Dog("Barney");
         Cat tom = new Cat("Tom");
 
-        tom.speak();
-        barney.speak();
+        tom.sayName();
+        barney.sayName();
     }
 }
