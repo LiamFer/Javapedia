@@ -1,6 +1,6 @@
 package fundamentals;
 
-public class Cat extends Animal{
+public class Cat extends Animal implements Predator,Prey{
     Cat(String name){
         super(name);
     }
@@ -12,5 +12,15 @@ public class Cat extends Animal{
 
     void sayName(){
         System.out.printf("The cat name is %s",this.name);
+    }
+
+    @Override
+    public void flee() {
+        System.out.println("THE DOG IS FLEEING!");
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println("THE DOG IS HUNTING!");
     }
 }
