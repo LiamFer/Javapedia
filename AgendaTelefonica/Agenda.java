@@ -16,18 +16,28 @@ public class Agenda {
 
         if (contactType == 1) {
             adicionarContatoPessoal();
+            System.out.println("=====CONTATO ADICIONADO=====");
+
         } else if (contactType == 2) {
             adicionarContatoProfissional();
+            System.out.println("=====CONTATO ADICIONADO=====");
         } else {
             System.out.println("COMMAND ERROR");
         }
 
     }
 
-    void visualizarContatos(){
-        for(Contato contato: this.contatos){
+    void visualizarContatos() {
+        System.out.println("=====CONTATOS=====");
+        for (int i = 0; i < this.contatos.size();i++) {
+            Contato contato = this.contatos.get(i);
+            System.out.println("-----  -----");
+            System.out.println(i+". Contato");
             contato.displayInformation();
+            System.out.println("-----  -----");
         }
+        System.out.println("=====  FIM   =====");
+
     }
 
     private void adicionarContatoPessoal() {
@@ -53,6 +63,7 @@ public class Agenda {
 
         this.contatos.add(new ContatoPessoal(nome, email, telefone, endereco, dataNascimento, apelido, parentesco));
     }
+
     private void adicionarContatoProfissional() {
         Scanner sc = this.sc;
         String nome, email, telefone, endereco, empresa, cargo;
@@ -77,6 +88,7 @@ public class Agenda {
         this.contatos.add(new ContatoProfissional(nome, email, telefone, endereco, dataNascimento, empresa, cargo));
 
     }
+
     private String[] dadosBasicos() {
         Scanner sc = this.sc;
         String[] infos = new String[4];
