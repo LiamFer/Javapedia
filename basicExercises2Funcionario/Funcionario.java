@@ -1,4 +1,4 @@
-package basicExercises2;
+package basicExercises2Funcionario;
 
 public abstract class Funcionario extends Pessoa implements CLT{
     private double salario = 2000;

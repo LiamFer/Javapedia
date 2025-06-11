@@ -1,4 +1,4 @@
-package basicExercises2;
+package basicExercises2Funcionario;
 
 public abstract class Pessoa {
     private int codigo;

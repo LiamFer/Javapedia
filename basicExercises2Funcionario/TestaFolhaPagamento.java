@@ -1,4 +1,4 @@
-package basicExercises2;
+package basicExercises2Funcionario;
 
 public class TestaFolhaPagamento {
     public static void main(String[] args) {

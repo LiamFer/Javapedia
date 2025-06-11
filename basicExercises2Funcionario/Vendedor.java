@@ -1,4 +1,4 @@
-package basicExercises2;
+package basicExercises2Funcionario;
 
 public class Vendedor extends Funcionario{
     Vendedor(int codigo,String nome){

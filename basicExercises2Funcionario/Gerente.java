@@ -1,4 +1,4 @@
-package basicExercises2;
+package basicExercises2Funcionario;
 
 public class Gerente extends Funcionario{
     Gerente(int codigo, String nome){
