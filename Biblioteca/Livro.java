@@ -26,5 +26,6 @@ public class Livro {
 
     public static Livro novoLivro(){
         Scanner sc = new Scanner(System.in);
+        return new Livro(1,"a",2,"1");
     }
 }

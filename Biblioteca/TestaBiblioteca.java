@@ -18,15 +18,15 @@ public class TestaBiblioteca {
                     "6.Listar Membros\n" +
                     "7.Listar Livros");
             int option = sc.nextInt();
-            switch (option){
-                case 1 -> biblioteca.adicionarLivro(Livro.novoLivro());
-                case 2 -> biblioteca.removerLivro();
-                case 3 -> biblioteca.emprestarLivro(Livro.novoLivro());
-                case 4 -> biblioteca.adicionarLivro(Livro.novoLivro());
-                case 5 -> biblioteca.adicionarLivro(Livro.novoLivro());
-                case 6 -> biblioteca.adicionarLivro(Livro.novoLivro());
-                case 7 -> biblioteca.adicionarLivro(Livro.novoLivro());
-            }
+//            switch (option){
+//                case 1 -> biblioteca.adicionarLivro(Livro.novoLivro());
+//                case 2 -> biblioteca.removerLivro();
+//                case 3 -> biblioteca.emprestarLivro(Livro.novoLivro());
+//                case 4 -> biblioteca.adicionarLivro(Livro.novoLivro());
+//                case 5 -> biblioteca.adicionarLivro(Livro.novoLivro());
+//                case 6 -> biblioteca.adicionarLivro(Livro.novoLivro());
+//                case 7 -> biblioteca.adicionarLivro(Livro.novoLivro());
+//            }
         } while (running);
     }
 }
