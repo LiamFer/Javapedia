@@ -1,5 +1,7 @@
 package Biblioteca;
 
+import java.util.Scanner;
+
 public class Livro {
     int ISBN;
     String nome;
@@ -20,5 +22,9 @@ public class Livro {
 
     public static void livroNaoEncontrado(int ISBN) throws LivroNaoEncontrado {
         throw new LivroNaoEncontrado("O livro com ISBN " + ISBN + " não foi encontrado na Biblioteca!");
+    }
+
+    public static Livro novoLivro(){
+        Scanner sc = new Scanner(System.in);
     }
 }
